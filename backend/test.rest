@@ -1,0 +1,85 @@
+POST http://localhost:3030/Insert
+content-type: application/json
+
+{
+    "firstName": "pooja",
+    "lastName": "bhalala",
+    "age": 22,
+    "gender": "female",
+    "status": "single",
+    "address": "amreli",
+    "city": "amreli",
+    "pincode": "123456",
+    "contact": "1234567899",
+    "mail": "pooja@gmail.com",
+    "appointmentDate": "2024-01-25",
+    "appointmentTime": "12:25:25",
+    "guardianName": "pooja",
+    "guardianRelation": "sister",
+    "guardianContact": "3456545676",
+    "payment": "done",
+    "doctorName": "mehul",
+    "symptoms": "cuff,fever"
+}
+
+###
+
+GET http://localhost:3030/Display
+
+###
+
+GET http://localhost:3030/FetchOne/1
+
+###
+
+
+PATCH http://localhost:3030/UpdateOne/11
+content-type: application/json
+
+{
+    "firstName": "umang",
+    "lastName": "vadadoriya",
+    "age": 22,
+    "gender": "male",
+    "status": "single",
+    "address": "surat",
+    "city": "surat",
+    "pincode": "123456",
+    "contact": "1234567899",
+    "mail": "umang@gmail.com",
+    "appointmentDate": "2024-01-26",
+    "appointmentTime": "17:43:32",
+    "guardianName": "riya",
+    "guardianRelation": "sister",
+    "guardianContact": "3456545676",
+    "payment": "underdone",
+    "doctorName": "mehul",
+    "symptoms": "cuff,fever"   
+}
+
+###
+
+
+DELETE http://localhost:3030/DeleteOne/1
+
+###
+
+
+GET http://localhost:3030/FetchTimeColumn
+
+###
+
+GET http://localhost:3030/FetchDateColumn
+
+###
+
+
+GET http://localhost:3030/FetchOneForSlot/2024-01-25T00:00:00.000Z/16:35:57
+
+###
+
+
+GET http://localhost:3030/FetchTodayTomorrow/2024-01-27T00:00:00.000Z/2024-01-28T00:00:00.000Z
+
+
+###
